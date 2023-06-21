@@ -1,0 +1,63 @@
+// ********************************Scroll barr***********************
+.scroll_bar{
+    right: 3.15%;
+    top: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    img{
+        width: 100%;
+    }
+    .logo_social {
+        margin-top: 25px;
+        .ico{
+            width: 35px;
+            height: 35px;
+            margin: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 100;
+        }
+    }
+}
+// *********************** Barr de navigation *******************************
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid $border_color;
+    padding: 35px 35px 45px 35px;
+    img{
+        width: 100%;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 5%;
+        .game{
+            margin-left: 15%;
+        }
+        li{
+            margin: 2% auto;
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: $white;
+                font-family: 'Rajdhani';
+                font-size: 36px;
+                letter-spacing: 5px;
+                text-transform: uppercase;
+            }
+            .active,
+            a:hover{
+                text-decoration: underline;
+                color: $yellow;
+                font-weight: bold;
+            }
+        }
+    }
+}

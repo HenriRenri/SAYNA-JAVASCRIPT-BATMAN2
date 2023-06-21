@@ -1,0 +1,21 @@
+.text_footer{
+    font-family: 'Space_grotesk_Regular';
+    font-size: 12px;
+    padding-top: 4%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.media_social{
+    text-align: center;
+    padding-top: 4%;
+    padding-bottom: 3%;
+    .ico{
+        width: 35px;
+        height: 35px;
+        align-items: center;
+        text-align: center;
+        color: $white;
+        margin-left: 3%;
+    }
+}

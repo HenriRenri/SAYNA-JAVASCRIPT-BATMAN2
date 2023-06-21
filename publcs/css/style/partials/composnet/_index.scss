@@ -1,0 +1,288 @@
+@import '../outille/config_general';
+@import './template/footer';
+
+#Header{
+    background-image: url('../../image/Illustrations_1/Bathome1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    margin-bottom: 3.44%;
+    @import './template/nav';
+       // *******************Contenent avec les Button**********************
+       .content{
+        width: 62%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-top: 220px;
+        p{
+            margin-top: 4%;
+            font-size: 18px;
+            letter-spacing: 2px;
+            word-spacing: 10px;
+            font-family: 'Space_grotesk_Regular';
+        }
+        .btn,.btn1,.btn2{
+            margin: 5%;
+        }
+    }
+    img{
+        display: block;
+        margin: auto;
+        width: 80px;
+        padding-top: 20%;
+    }
+}
+// ****************************Desing section Némésis*************************
+.nemesis{
+    padding-top: 15%;
+    .image_nemesis{
+        position: absolute;
+        bottom: 68%;
+        left: 15%;
+    }
+}
+// ****************************Desing section Alliés*************************
+.allies{
+    padding-top: 15%;
+    display: flex;
+    flex-direction: column;
+    .allies_img{
+        position: absolute;
+        top: -8%;
+        right: -6.9%;
+    }
+}
+// ****************************Desing section Justice League*************************
+.justice_image{
+    width: 100%;
+    height: auto;
+}
+// ****************************Desing section Multimédia*************************
+#Multimedia{
+    button{
+    position: relative;
+    top: 50%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    }
+    .left{
+        left: 2%;
+    }
+    .right{
+        left: 90%;
+    }
+    .img_slide{
+        width: 60%;
+        display: flex;
+        margin: 5% auto;
+        .img_slider{
+            width: auto;
+            height: 100%;
+            border: 1px solid $border_color;
+        }
+        .text_slider{
+            padding: 1% 1% 1% 2%;
+            background: linear-gradient(160deg, 
+            $btn_bg 12%, $bleu_bg 40%);
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            h2, .span_1{
+                text-transform: uppercase;
+                font-family: 'Space_grotesk_Regular';
+                font-size: 18px;
+            }
+            span{
+                font-family: 'Rajdhani';
+                font-size: 18px;
+                .yellow{
+                    color: $yellow;
+                    font-family: 'Space_grotesk_Bold';
+                }
+            }
+            p{
+                font-family: 'Space_grotesk_Regular';
+                font-size: 14px;
+            }
+        }
+    }
+    .video{
+        position: relative;
+        width: auto;
+        height: 80%;
+        left: 3.5%;
+        margin: 6% auto;
+    }
+    .video:hover{
+        opacity: rgba(0, 0, 0, 0.575);
+        box-shadow: 1px 2px 60px 20px $btn_white;
+    }
+}
+// ****************************Desing section Contact*************************
+#Contact{
+    padding: 65px auto;
+    background: linear-gradient(160deg, 
+    $btn_bg 12%, $bleu_bg 80%);
+    .global{
+        width: 70%;
+        margin: auto;
+        h2{
+            font-family: 'Space_grotesk_Regular';
+            text-align: center;
+            margin-bottom: 6%;
+            font-size: 2.3rem;
+            letter-spacing: 6px;
+            padding-top: 4%;
+        }
+        form{
+            padding-bottom: 5%;
+            .input{
+                font-family: 'Space_Grotesk_Regular';
+                font-size: 2rem;
+                display: block;
+                margin-top: 4%;
+                text-transform: uppercase;
+            }
+            .news_text, 
+            .btn_group, 
+            .message{
+                width: 70%;
+                font-family: 'Space_Grotesk_Regular';
+                font-size: 18px;
+                padding-top: 2%;
+            }
+            .news{
+                font-family: 'Space_Grotesk_Regular';
+                font-size: 18px;
+                padding-top: 2%;
+            }
+            .btn_group{
+                justify-content: center;
+                align-items: center;
+                padding-top: 4%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                input[type=radio]{
+                    display: none;
+                }
+                .btn_form{
+                    width: 25%;
+                    height: auto;
+                    border: 1px solid;
+                    padding: 2%;
+                    text-align: center;
+                    border-image: linear-gradient(120deg, 
+                        $btn_bg 12%, $bleu_bg 80%);
+                    border-image-slice: 1;
+                    &:hover{
+                        background: linear-gradient(120deg, 
+                            $btn_bg 12%, $bleu_bg 80%);
+                    }
+                }
+            }
+            input[type=email], textarea{
+                display: block;
+                width: 100%;
+                padding: 1%;
+                margin-top: 2%;
+                outline: none;
+                color: $white;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: 1px solid $white;
+                background-color: transparent;
+            }
+            .menu_btn, .news{
+                margin-top: 15px;
+                border-bottom: 1px solid $white;
+            }
+            #dropdownlist{
+                width: 100%;
+                background: linear-gradient(160deg,
+                $btn_bg 12%, $bleu_bg 80%);
+                border: none;
+                font-size: 16px;
+                font-weight: 100;
+                margin-top: 2%;
+                option{
+                    background: linear-gradient(160deg,
+                    $btn_bg 12%, $bleu_bg 80%);
+                }
+            }
+            input[type=submit]{
+                margin: 10% auto;
+                display: block;
+                border: none;
+            }
+        }
+        ::-moz-placeholder{
+            color: $grey;
+            font-family: 'Rajdhani';
+            font-size: 15px;
+        }
+        :-ms-input-placeholder{
+            color: $grey;
+            font-size: 15px;
+        }
+        ::placeholder{
+            color: $grey;
+            font-size: 15px;
+        }
+    }
+}
+// ****************************Desing section Citation*************************
+.double_cote{
+    position: relative;
+    left: 6%;
+}
+.citation{
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .corp_citation{
+        width: 45%;
+        margin-top: 3%;
+        .text_citation p{
+            font-family: 'Space_Grotesk_Regular';
+            font-size: 18px;
+            padding-bottom: 4%;
+        }
+        .auteur{
+            padding-bottom: 2%;
+            p{
+                color: $grey;
+                font-size: 12px;
+            }
+        }
+        .cercle{
+            display: flex;
+            justify-content: center;
+            .cercle_p{
+                width: 15px;
+                height: 15px;
+                border: 1px solid $bleu_bg;
+                margin: 1.5%;
+                border-radius: 50%;
+            }
+            .cercle_milieux{
+                width: 15px;
+                height: 15px;
+                margin: 1.5%;
+                border-radius: 50%;
+                background-color: $bleu_bg;
+            }
+        }
+    }
+}
+.double_cote_ferme{
+    float: right;
+    position: relative;
+    right: 6%;
+}

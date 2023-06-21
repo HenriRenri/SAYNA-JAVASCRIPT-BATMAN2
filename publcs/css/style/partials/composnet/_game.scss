@@ -1,0 +1,30 @@
+@import '../outille/config_general';
+@import './template/footer';
+// ********************************Scroll Header***********************
+#Header{
+    background-image: url('../../image/Illustrations_2/Batgame_1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    @import './template/nav';
+    .content{
+        width: 45%;
+        padding: 16% 0% 0% 6%;
+        h1{
+            font-size: 3.5rem;
+            font-size: bolder;
+        }
+    }
+    img{
+        display: block;
+        margin: auto;
+        width: 80px;
+        padding: 20% 0% 10.9% 0%;
+    }
+}
+// ********************************Desing Game***********************
+.game{
+    text-align: center;
+    justify-content: center;
+}
+// ********************************Desing ***********************
